@@ -1,0 +1,34 @@
+:root {
+    --slidev-code-line-height: 18px;
+    --slidev-code-font-size: 17px;
+}
+
+h2 {
+    @apply mb-4;
+    font-size: 2.25rem !important;
+    line-height: 2.7rem !important;
+    background-color: #2B90B6;
+    background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.slidev-code {
+    @apply tracking-tight;
+}
+
+.base-chip {
+    font-family: 'Roboto Light', sans-serif;
+    background: rgb(204, 209, 215);
+    border-radius: 5px;
+    padding: 4px 10px;
+}
+.base-chip.green {
+    background-color: rgba(59, 211, 84, 0.35);
+}
+.base-chip.orange {
+    background-color: rgba(211, 138, 59, 0.35);
+}
