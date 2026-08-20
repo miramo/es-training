@@ -1,24 +1,28 @@
 {
   "name": "es-training",
   "private": true,
+  "packageManager": "pnpm@11.22.0",
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
     "export": "slidev export"
   },
   "volta": {
-    "node": "18.17.1",
-    "yarn": "1.22.19"
+    "node": "24.19.0",
+    "pnpm": "11.22.0"
   },
   "dependencies": {
-    "@slidev/cli": "^0.43.7",
-    "@slidev/theme-apple-basic": "^0.20.0",
-    "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest"
+    "@slidev/cli": "^52.19.1",
+    "@slidev/theme-apple-basic": "^0.25.1",
+    "@slidev/theme-default": "^0.25.0",
+    "@slidev/theme-seriph": "^0.25.0",
+    "vue": "^3.5.41"
   },
   "devDependencies": {
-    "@iconify-json/akar-icons": "^1.1.19",
-    "@iconify-json/ant-design": "^1.1.10",
-    "playwright-chromium": "^1.38.1"
+    "@iconify-json/akar-icons": "^1.2.7",
+    "@iconify-json/ant-design": "^1.2.8",
+    "@iconify-json/carbon": "^1.2.25",
+    "@iconify-json/ph": "^1.2.2",
+    "playwright-chromium": "^1.62.1"
   }
 }

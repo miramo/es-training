@@ -28,7 +28,7 @@ transition: fade-out
 
 ## Elastic Stack
 
-<img src="https://github.com/miramo/es-training/blob/main/assets/images/elk-stack.png?raw=true" style="display:block;float:none;margin-left:auto;margin-right:auto;height:90%">
+<img src="https://github.com/miramo/es-training/blob/main/assets/images/elk-stack.png?raw=true" style="display:block;float:none;margin-left:auto;margin-right:auto;height:85%" alt="ELK Stack">
 
 <!--
 ELK est une suite open source comprenant 3 composants principaux : Elasticsearch, Logstash et Kibana.
@@ -141,7 +141,7 @@ Permet notamment de :
 <template v-slot:right>
 
 <v-clicks>
-<img src="https://s3.memeshappen.com/memes/Who-is-JaSON-And-why-is-he-stateless-meme-46010.jpg">
+<img src="https://preview.redd.it/dogrvclkll0a1.png?auto=webp&s=72e05d2cea869d6b1218193a947efb316c1c01b0">
 </v-clicks>
 
 </template>
@@ -161,9 +161,11 @@ L'URL de base se présente de la manière suivante
 👉 Ajoutons un index pour stocker des informations sur les voitures Tesla
 
 <v-clicks>
+
 ```bash
 curl -XPUT 'http://localhost:9200/tesla/'
 ```
+
 </v-clicks>
 
 <v-clicks>
@@ -181,6 +183,7 @@ transition: slide-out
 👉 Ajoutons un mapping pour définir la structure de nos documents
 
 <v-clicks>
+
 ```bash
 curl -XPUT -H 'Content-Type: application/json' 'http://localhost:9200/tesla/_mapping' -d '
 {
@@ -197,6 +200,7 @@ curl -XPUT -H 'Content-Type: application/json' 'http://localhost:9200/tesla/_map
   }
 }'
 ```
+
 </v-clicks>
 
 <div v-click>
@@ -225,6 +229,7 @@ transition: slide-out
 👉 Ajoutons quelques models Tesla
 
 <v-clicks>
+
 ```bash
 curl -XPUT -H 'Content-Type: application/json' 'http://localhost:9200/tesla/_doc/1' -d '
 {
@@ -233,9 +238,11 @@ curl -XPUT -H 'Content-Type: application/json' 'http://localhost:9200/tesla/_doc
   "description": "LA berline électrique"
 }'
 ```
+
 </v-clicks>
 
 <v-clicks>
+
 ```bash
 curl -XPUT -H 'Content-Type: application/json' 'http://localhost:9200/tesla/_doc/2' -d '
 {
@@ -244,9 +251,11 @@ curl -XPUT -H 'Content-Type: application/json' 'http://localhost:9200/tesla/_doc
   "description": "La voiture électrique des devs"
 }'
 ```
+
 </v-clicks>
 
 <v-clicks>
+
 ```bash
 curl -XPUT -H 'Content-Type: application/json' 'http://localhost:9200/tesla/_doc/3' -d '
 {
@@ -255,6 +264,7 @@ curl -XPUT -H 'Content-Type: application/json' 'http://localhost:9200/tesla/_doc
   "description": "Le SUV des michel qui ont trop de moula"
 }'
 ```
+
 </v-clicks>
 
 ---
@@ -293,7 +303,7 @@ clicks: 4
 
 <div style="width: 95%">
 
-```json {all|12|18|19|21-25} {maxHeight:'400px'}
+```json {all|12|18|19|21-25}{maxHeight:'400px'}
 {
   "took":3,
   "timed_out":false,
@@ -544,7 +554,7 @@ POST _sql/translate?pretty --data-binary $'
 
 <div v-click="4">
 
-```json {all} { maxHeight: '410px' }
+```json {all}{maxHeight:'410px'}
 {
   "size" : 5,
   "query" : {
@@ -625,6 +635,7 @@ curl -XPUT -H 'Content-Type: application/json' 'http://localhost:9200/tesla/_doc
   "description": "Le SUV compact"
 }'
 ```
+
 </v-clicks>
 
 <v-clicks>
@@ -640,6 +651,7 @@ curl -XPUT -H 'Content-Type: application/json' 'http://localhost:9200/tesla/_doc
 
 ---
 transition: slide-out
+zoom: 0.95
 ---
 
 ## L’importance de l’analyse
@@ -716,7 +728,7 @@ clicks: 10
 
 <div style="width: 95%">
 
-```json {all|all|all|all|25|26-32|27|28|29|30|31} {maxHeight:'400px'}
+```json {all|all|all|all|25|26-32|27|28|29|30|31}{maxHeight:'400px'}
 {
   "settings": {
     "analysis": {
@@ -864,6 +876,7 @@ curl -XPUT -H 'Content-Type: application/json' 'http://localhost:9200/_ingest/pi
 
 ---
 transition: slide-out
+zoom: 0.95
 ---
 
 ## Ajouter un pipeline à l'indexation
